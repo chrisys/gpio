@@ -16,7 +16,7 @@ _open_pins = {}
 GPIO_ROOT = '/sys/class/gpio'
 GPIO_EXPORT = os.path.join(GPIO_ROOT, 'export')
 GPIO_UNEXPORT = os.path.join(GPIO_ROOT, 'unexport')
-FMODE = 'w+'  # w+ overwrites and truncates existing files
+FMODE = 'a'  # w+ overwrites and truncates existing files
 IN, OUT = 'in', 'out'
 LOW, HIGH = 0, 1
 
